@@ -45,7 +45,9 @@ function divide(a, b) {
 }
 
 // Modulo (%): returns the remainder of a divided by b
+// Throws an error if b is zero to prevent modulo by zero
 function modulo(a, b) {
+  if (b === 0) throw new Error('Modulo by zero');
   return a % b;
 }
 
